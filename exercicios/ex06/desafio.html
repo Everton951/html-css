@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 7px;
+            margin: 10px;        
+        }
+
+        nav {
+            background-color: darkgray;
+            padding: 2px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+            padding-right: 10px;
+        }
+
+        nav > a:hover{
+            color: gold;
+        }
+
+        main{
+            background-color: white;
+            padding: 8px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 1px 7px 4px 4px;
+            border-radius: 8px;
+        }
+
+        aside{
+            background-color: darkgray;
+            color: white;
+            padding: 10px 10px 10px 4px;            
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel harum optio suscipit quisquam ullam possimus quis pariatur! Sed asperiores corporis, quibusdam quaerat esse nostrum harum ipsam adipisci sequi inventore?</p>
+                <aside>
+                    Artigo escrito por Éverton
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Éverton
+    </footer>
+</body>
+</html>

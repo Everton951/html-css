@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {  /* Configuração GLOBAL */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{ /* Fazer um gradiente */
+    background-image: linear-gradient(to right, #FF8519, #D6D58E);
+}
+
+main{ /* Esse main é uma tag do HTML (index.html) - Podia ser uma div */
+    background-color: white;
+    border-radius: 20px; /* Deixar as bordas arredondadas */
+    box-shadow: 5px 5px 15px black; /*4 parâmetros - Fazer uma sombra */
+    width: 600px; /* Largura */
+    padding: 10px; /* Espaçamento da borda */
+    margin: auto; /* Centralizar no meio da tela */
+
+}
+
+h1{
+    color: #042940;
+    text-align: center;
+    text-shadow: 1px 1px 1px black; /*4 parâmetros - Fazer uma sombra */
+}
+
+h2{
+    color: #005C53;
+}
+
+p{
+    text-align: justify;
+}
