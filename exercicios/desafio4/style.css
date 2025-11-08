@@ -36,7 +36,8 @@ body{
             border-radius: 5px;
         }
 main{
-    width: 800px;
+    max-width: 800px;
+    min-width: 350px;
     background-color: white;
     margin: auto;
     margin-top: 0px;
@@ -72,14 +73,15 @@ img {
     height: 350px;
 }
 
-article > video {
-    width: 700px;
+article > video {     
+    width: 90%;
     display: block;
     margin: auto;
 }
 
 section#cursos{
-    width: 650px;
+    max-width: 650px;
+    min-width: 400px;
     margin: 15px auto;
     padding: 10px;
     border-radius: 10px;
