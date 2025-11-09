@@ -1,27 +1,38 @@
 <!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Personalização do Background</title>
-
     <style>
-        body{
-            height: 100vh; /* Altura pegando a visualização toda */
-            background-color: black;
-            background-image: url('imagem/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; /* Vai cobrir a janela inteira */            
+        #container {
+            height: 500px;
+            background-color: purple;
+            padding: 10px;            
+            /* margin: auto; - Só serve para centralizar na horizontal  */
+
+            position: relative; /*Já é o padrão */  
+            
+            /* JEITO MAIS SIMPLES DE ALINHAR NO CENTRO 
+            display: flex;
+            justify-content: center;
+            align-items: center; */
         }
 
-        main{
-            background-color: white;
+        #conteudo{
+            position: absolute; /**/
+            height: 200px;
             width: 400px;
-            padding: 10px;
-            margin: auto;
+            background-color: yellow;
+
+            /* Jeito que o Guanabara ensinou - um pouco mais difícil */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 
 </head>
 <body>
-    <main><h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad non eum delectus id voluptatem in, magni molestiae quidem possimus maiores alias eveniet porro modi dolores veritatis eligendi quisquam veniam earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est voluptas accusamus explicabo nobis dolore, cumque ea quidem similique voluptatibus placeat autem quos libero magnam, fugit veritatis quas earum tenetur corrupti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fuga quo dolor quae aspernatur sed eius accusamus laudantium nam iusto saepe non ratione omnis, corporis quaerat deserunt sapiente architecto ipsam?</p>
-    </main>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
