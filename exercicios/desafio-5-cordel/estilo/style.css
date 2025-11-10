@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+section{ /* Para deixar do jeito que escrevi no HTML, sem precisar usar vários <br> para quebrar a lilnha */
+    white-space: pre-line;
+}
