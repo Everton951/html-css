@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +12,7 @@
 html, body{
     min-height: 100%; /* ou vh - View Height */
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -19,7 +24,8 @@ header{
 header h1{
     padding-top: 50px;
     /* text-transform: uppercase; -DEIXAR TODAS AS LETRAS MAIÚSCULAS */
-    font-variant: small-caps; /* Letras MAIÚSCULAS, mas as primeiras são maiores que as outras */    
+    font-variant: small-caps; /* Letras MAIÚSCULAS, mas as primeiras são maiores que as outras */   
+    font-size: 4em;
 }
 
 header p{
@@ -42,6 +48,7 @@ section{ /* Para deixar do jeito que escrevi no HTML, sem precisar usar vários 
     padding-bottom: 10vh;/* 10% da altura da tela */
     line-height: 2em; /* Dá um espaçamento entre as frases */
     padding-left: 30px;
+    font-size: 2em;
 }
 
 section.normal{
@@ -56,7 +63,8 @@ section.imagem{
 
 section.imagem p {
     background-color: rgba(0, 0, 0, 0.212);
-    width: 400px;
+    display: inline-block; /* Faz uma caixa do tamanho do conteúdo */
+    padding: 5px;
 }
 
 footer{
