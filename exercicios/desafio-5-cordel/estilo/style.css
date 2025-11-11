@@ -51,6 +51,10 @@ section{ /* Para deixar do jeito que escrevi no HTML, sem precisar usar vários 
     font-size: 2em;
 }
 
+section p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -59,12 +63,26 @@ section.normal{
 section.imagem{
     background-color: rgb(27, 23, 23);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    background-size: cover;
+    background-attachment: fixed; /* Deixar a imagem fixada - EFEITO PARALLAX simples */
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.575);
     display: inline-block; /* Faz uma caixa do tamanho do conteúdo */
     padding: 5px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;    
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;    
 }
 
 footer{
