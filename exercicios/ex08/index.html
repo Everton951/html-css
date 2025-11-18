@@ -1,21 +1,22 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
-</head>
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Formulário</title></head>
 <body>
-    <h1>Meu primeiro formulário</h1>
-    <!-- "method" PADRÃO É O GET -->
-    <form action="cadastro.php" method="post" autocomplete="off"> <!-- Desligar o autocomplete -->
+    <h1>Teste de Formulário</h1>
 
-        <p><label for="inome">Nome:</label> <!-- Dentro do "for",sempre colocar o ID --> 
-            <input type="text" name="nome" id="inome"> <!-- Fazer a caixa onde vai digitar -->
+<!-- required = É obrigatório colocar algo - não pode deixar a caixa em branco -->
+<!-- minlength="5" maxlength="15" = Vai ter no minímo 5 letras e no máximo 15 letras -->
+<!-- placeholder = colocar uma frase dentro da caixa -->
+
+    <form action="cadastro.html" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usuario" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do usuário" autocomplete="username"> <!-- Puxar o usuário já salvo -->
         </p>
-
-        <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome">
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" placeholder="Senha do usuário" autocomplete="current-password"> <!--Puxar a senha já salva -->
         </p>
-
-        <input type="submit" value="Enviar">        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> <!-- LIMPAR as caixas -->
     </form>
 </body>
 </html>
