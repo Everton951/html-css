@@ -1,21 +1,17 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Formulário</title></head>
-<body>
-    <h1>Meu Formulário</h1>
-
-    <form action="cadastro.html" method="post" autocomplete="on">
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Formulário</title>
+</head><body>   
+    <form action="cadastro.html" method="post">
         <p>
-            <fieldset>
-                <legend>Sexo</legend><!-- Todo botão de RADIO tem que ter o mesmo NAME -->
-                <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label><br> <!-- ID  tem que ser diferente-->
-                <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
-            </fieldset>
-            <fieldset>
-                <legend>Esportes favoritos</legend>
-                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
-                <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Vôlei</label> <br>
-                <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete</label> <br>
-                <input type="checkbox" name="esjud" id="iesjud"> <label for="iesjud">Judô <br></label> 
-            </fieldset>
+            <label for="icor">Cor: </label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nível de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10"> <!-- Vai aparecer uma barra para aumentar ou diminuir -->
+        </p>
+        <p>
+            <label for="ifoto">Foto do perfil: </label>
+            <input type="file" name="Foto" id="ifoto">
         </p>
         <p>
             <input type="submit" value="Enviar">
