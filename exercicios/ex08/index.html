@@ -1,17 +1,33 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Formulário</title>
-</head><body>   
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu formulário</h1>
+
     <form action="cadastro.html" method="post">
         <p>
-            <label for="icor">Cor: </label>
-            <input type="color" name="Cor" id="icor">
+            <label for="iest">Estado: </label>
+            <select name="Estado" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
         </p>
         <p>
-            <label for="inivel">Nível de satisfação: </label>
-            <input type="range" name="nivel" id="inivel" min="1" max="10"> <!-- Vai aparecer uma barra para aumentar ou diminuir -->
-        </p>
-        <p>
-            <label for="ifoto">Foto do perfil: </label>
-            <input type="file" name="Foto" id="ifoto">
+            <label for="iprof">Profissão: </label>
+            
         </p>
         <p>
             <input type="submit" value="Enviar">
