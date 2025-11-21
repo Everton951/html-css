@@ -7,3 +7,16 @@
     margin: 0px;
 }
 
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(8, 60, 228); 
+    background-size: contain; /* A imagem vai aparecer melhor (a imagem tá nos outros CSS's)*/
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    padding: 10px;
+}

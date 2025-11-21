@@ -2,3 +2,7 @@
 
 /* Aparece deitado (landscape )*/
 
+body{
+    background-image: url('../imagem/03-deitado.png');
+    background-position: left top;    
+}
