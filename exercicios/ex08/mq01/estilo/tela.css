@@ -35,6 +35,15 @@ menu li{ /* Deixar um do lado do outro */
 
 article{
     width: 600px;
-    display: block;
+   
     margin: auto;
+    height: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
 }
