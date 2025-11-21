@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* declarações gerais */
+       *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html, body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(8, 60, 228); 
+            background-size: contain; /* A imagem vai aparecer melhor (a imagem tá nos outros CSS's)*/
+            background-repeat: no-repeat;
+        }
+
+        h1{
+            color: white;
+            padding: 10px;
+        }
+        /* declarações retrato - pé */
+        body{
+            background-image: url(imagem/01-pe.png);
+            background-position: center;
+        }
+        /* declarações paisagem - deitado */
+        body{
+            background-image: url(imagem/03-deitado.png);
+            background-position: left top;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo.</h1>
+</body>
+</html>
