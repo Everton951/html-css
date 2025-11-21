@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <style>
-        /* declarações gerais */
+       
+        /* declarações retrato - pé */
+        @media screen and (orientation: portrait) {
+            body{
+                background-image: url(imagem/04-pe.png);
+                background-position: center;
+            }
+        }
+        /* declarações paisagem - deitado */
+        @media screen and (orientation: portrait) {
+            body{
+                background-image: url('imagem/03-deitado.png');
+                background-position: left top;    
+            }
+        }
+
+         /* declarações gerais */
        *{
             padding: 0px;
             margin: 0px;
@@ -23,16 +39,6 @@
         h1{
             color: white;
             padding: 10px;
-        }
-        /* declarações retrato - pé */
-        body{
-            background-image: url(imagem/01-pe.png);
-            background-position: center;
-        }
-        /* declarações paisagem - deitado */
-        body{
-            background-image: url(imagem/03-deitado.png);
-            background-position: left top;    
         }
     </style>
 </head>
