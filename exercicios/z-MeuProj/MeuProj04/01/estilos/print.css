@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media print {
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Courier New', Courier, monospace;
+    }    
+
+    nav a{
+        display: none;
+    }
+
+    main {
+        border: none;
+        width: 100vw;
+    }
+
+    main::after{
+        content: 'Esse é meu teste';
+    }
+}

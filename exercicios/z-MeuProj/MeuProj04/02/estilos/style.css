@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url(../imagem/deitado.png) no-repeat;
+    background-color: rgb(168, 29, 168);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background: url(../imagem/pe.png) no-repeat;
+        background-color: rgb(168, 29, 168);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    
+}
