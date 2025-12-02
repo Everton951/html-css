@@ -8,6 +8,9 @@
 
 body{
     background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -29,12 +32,21 @@ header menu a{
     border-radius: 5px 5px 0px 0px;
 }
 
+nav {
+    background-color: rgb(70, 66, 66);
+}
+
+nav a {
+    display: inline-block;
+}
+
 main {
     background-color: white;
     width: 70vw;
     margin: auto;
     padding: 10px;
     margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
@@ -51,4 +63,5 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
+    margin-top: auto;
 }
