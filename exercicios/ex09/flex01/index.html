@@ -3,13 +3,12 @@
         div.conteiner{
             background-color: lightcoral;
             display: flex; /* Para deixar fluido a página */
-            
-            flex-direction: row; /* Aparece em linha - PADRÃO */
+            flex-flow: row nowrap; /*Valor padrão */
+            justify-content: flex-end; /* Alinhando o conteúdo */
         }
         div.item{
             background-color: lightgreen;
             border: 1px solid black;
-            /*flex: auto;  Para deixar fluido a página */
             text-align: center;
             padding: 10px;
         }
