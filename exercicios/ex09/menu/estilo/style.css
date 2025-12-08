@@ -16,10 +16,20 @@ header{
     background-color: darkgrey;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /* Colocar um espaço entre o nome do site e o Menu */
+    align-items: center;
 }
 
 header h1{
     font-weight: bold;
+    flex: 0 0 200px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /* Ficar grudado no final */
 }
 
 header nav a{
@@ -29,12 +39,7 @@ header nav a{
     margin: 5px;
     border-radius: 5px;
     text-decoration: none;
-    text-align: center;
-    flex-direction: row-reverse;
-}
-
-header nav{
-    display: flex;
+    text-align: center;   
 }
 
 header nav a:hover{
