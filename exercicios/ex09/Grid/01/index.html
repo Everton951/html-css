@@ -1,30 +1,16 @@
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Grid Layout</title>
-    <style>
-        div.container{
-            border: 3px solid black;
-            height: 250px;
-            display: grid;
-          
-            grid-template: repeat(3, auto) / repeat(3, auto); /* Reduzindo - é os GT-rows e GT-columns */
-
-            grid-auto-rows: 80px; /*Sempre que criar uma linha, vai ter 80px */
-            
-            gap: 10px; /* Espaçamento entre cada item */
-            align-items: normal; /*Alinhar os itens */
-            justify-items: normal; /*Justificar os itens */
-            align-content: normal; /* Alinhar o conteúdo */
-            justify-content: normal; /* Justificar o conteúdo */
-        }
-
-        div.item{
-            border: 3px solid red;
-            padding: 5px;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body> <!-- div.container => Já cria direto a classe / div.item*3 => Cria 3 itens com a classe -->
+<body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-    </div></body></html>
+        <div class="caixa1">Caixa 01</div>
+        <div class="caixa2">Caixa 02</div>
+        <div class="caixa3">Caixa 03</div>
+    </div>
+</body>
+</html>
